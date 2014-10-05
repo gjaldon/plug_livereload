@@ -25,6 +25,7 @@ defmodule PlugLivereload.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    []
+    [{:cowboy, "~> 1.0.0", optional: true, only: :test},
+     {:plug, "~> 0.8.0", only: :test}]
   end
 end
